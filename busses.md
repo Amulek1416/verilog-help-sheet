@@ -1,3 +1,4 @@
+[[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
 # Busses
 
 Busses act similar to arrays in a programming language (but slightly different). 
@@ -48,3 +49,4 @@ module bus_example(
  
 endmodule
 ```
+[[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
