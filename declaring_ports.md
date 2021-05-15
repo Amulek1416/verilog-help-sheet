@@ -1,3 +1,4 @@
+[[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
 # Declaring Ports
 
 Ports are what go between the parenthesis of the module (similar to parameters in C programming). These are what connect to the outside of the module. These ports can be three different types: `input`, `output`, and `inout`.
@@ -48,3 +49,4 @@ module port_declaration_example_3(
 
 endmodule
 ```
+[[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
