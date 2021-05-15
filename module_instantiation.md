@@ -1,3 +1,4 @@
+[[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
 # Module Instantiation
 
 Modules can be instantiated in other modules. The following is the basic syntax:
@@ -118,5 +119,4 @@ module mainModule(
 
 endmodule
 ```
-
-
+[[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
