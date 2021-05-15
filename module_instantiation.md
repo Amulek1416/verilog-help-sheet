@@ -104,7 +104,7 @@ module mainModule(
   // ...
   myModule m6(.y(Y[6]), .x(X[6]), .sum(SUM[6]), .carry_in(CARRY[4]), .carry_out(CARRY[5]));
   
-  // Another format the this can be done in (can make it easier to read):
+  // Another format that this can be done in:
   myModule m7(
     .y(Y[7]),  
     .x(X[7]), 
@@ -112,6 +112,7 @@ module mainModule(
     .sum(SUM[7]),
     .carry_out(CARRY[6])
   );
+  // This format can make it easier to read when there are a large number of ports
   
   assign led = {CARRY[6], SUM};
 
