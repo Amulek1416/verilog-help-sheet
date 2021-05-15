@@ -59,7 +59,7 @@ endmodule
 
 ## Named Port Convention
 
-With named port convention, there is no need to worry about the order of the port. Instead, you can state the name of the port in the module you want to instantiate, then state what that port should be set to. 
+With named port convention, there is no need to worry about the order of the ports. Instead, you can state the name of the port in the module you want to instantiate, then state what that port should be set to.
 
 *FYI*: This may be longer, but can be very beneficial when debugging. This way lets you see the connections of the ports.
 
@@ -99,17 +99,17 @@ module mainModule(
         myModule label(.x(<connection_to_x), ..., .sum(<connection_to_sum>));
   */ 
   
-  myModule m0(.y(Y[0]), .sum(SUM[0]), .x(X[0]), .carry_in(1'b0), .carry_out(CARRY[0]));
+  myModule m0(.sum(SUM[0]), .y(Y[0]), .x(X[0]), .carry_in(1'b0), .carry_out(CARRY[0]));
   myModule m0(.y(Y[1]), .sum(SUM[1]), .x(X[1]), .carry_in(CARRY[0]), .carry_out(CARRY[1]));
   // ...
-  myModule m6(.y(Y[6]), .sum(SUM[6]), .x(X[6]), .carry_in(CARRY[4]), .carry_out(CARRY[5]));
+  myModule m6(.y(Y[6]), .x(X[6]), .sum(SUM[6]), .carry_in(CARRY[4]), .carry_out(CARRY[5]));
   
   // Another format the this can be done in (can make it easier to read):
   myModule m7(
-    .y(Y[7]), 
-    .sum(SUM[7]), 
+    .y(Y[7]),  
     .x(X[7]), 
     .carry_in(CARRY[5]), 
+    .sum(SUM[7]),
     .carry_out(CARRY[6])
   );
   
