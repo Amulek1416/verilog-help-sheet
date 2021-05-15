@@ -1,3 +1,4 @@
+[[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
 # Data Types
 
 There are two data types in Verilog: `wire` and `reg`.
@@ -51,3 +52,4 @@ module reg_example(
     
 endmodule
 ```
+[[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
