@@ -2,14 +2,14 @@
 This is a help sheet for programming in Verilog/System Verilog. This will help you to understand different aspects of Verilog. This assumes that the information is being read in the order of the **Contents** section. Click on the link of the topic to learn more about the topic.
 
 ## Contents
-- [Declaring Ports]()
-- [Data Types]()
-- [Busses]()
-- [Concatination and Replication]()
-- [Module Instantiation]()
-- [Making Debugging Easier]()
+- [Declaring Ports](https://github.com/Amulek1416/verilog-help-sheet/blob/main/declaring_ports.md)
+- [Data Types](https://github.com/Amulek1416/verilog-help-sheet/blob/main/data_types.md)
+- [Busses](https://github.com/Amulek1416/verilog-help-sheet/blob/main/busses.md)
+- [Concatination and Replication](https://github.com/Amulek1416/verilog-help-sheet/blob/main/concatination_and_replication.md)
+- [Module Instantiation](https://github.com/Amulek1416/verilog-help-sheet/blob/main/module_instantiation.md)
 
 ## Helps Comming Soon
 - 2-D arrays/busses
 - for loops
 - testbench
+- [Making Debugging Easier]()
