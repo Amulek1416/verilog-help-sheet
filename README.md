@@ -10,9 +10,9 @@ If there is incorrect information, bad grammer, something that needs a better ex
 - [Busses](https://github.com/Amulek1416/verilog-help-sheet/blob/main/busses.md)
 - [Concatination and Replication](https://github.com/Amulek1416/verilog-help-sheet/blob/main/concatination_and_replication.md)
 - [Module Instantiation](https://github.com/Amulek1416/verilog-help-sheet/blob/main/module_instantiation.md)
+- [Arrays](https://github.com/Amulek1416/verilog-help-sheet/blob/main/array_of_busses.md)
 
 ## Helps Comming Soon
-- 2-D arrays/busses
 - Loops
 - Test Benches
 - Making Debugging Easier
