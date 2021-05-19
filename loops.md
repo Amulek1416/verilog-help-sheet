@@ -213,6 +213,42 @@ There are multiple kinds of loops in Verilog and System Verilog, but some of the
 >```
 
 ### Example
-*Coming Soon*
+>```verilog
+>module mem8x8(
+>    input clk, write, reset,
+>    input [3:0] addr,
+>    input [7:0] data_in,
+>    output [7:0] data_out
+>);
+>
+>    reg [7:0] memory [0:7];
+>    reg [7:0] read_data;
+>    integer i;
+>    
+>    always@(posedge clk)
+>    begin
+>        if(reset)
+>        begin
+>          foreach(memory[i])
+>          begin
+>            memory[i] = 8'h00;
+>          end
+>        end
+>        
+>        else if(write) // Write to address in memory
+>        begin
+>            memory[addr] = data_in;
+>        end
+>        
+>        else // Read data from address in memory
+>        begin
+>            read_data = memory[addr];
+>        end
+>    end
+>        
+>    assign data_out = read_data;
+>
+>endmodule
+>```
 
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
