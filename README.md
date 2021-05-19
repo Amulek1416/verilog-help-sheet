@@ -14,6 +14,5 @@ If there is incorrect information, bad grammer, something that needs a better ex
 - [Loops](https://github.com/Amulek1416/verilog-help-sheet/blob/main/loops.md)
 
 ## Helps Comming Soon
-- Loops
 - Test Benches
 - Making Debugging Easier
