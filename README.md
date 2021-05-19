@@ -11,6 +11,7 @@ If there is incorrect information, bad grammer, something that needs a better ex
 - [Concatination and Replication](https://github.com/Amulek1416/verilog-help-sheet/blob/main/concatination_and_replication.md)
 - [Module Instantiation](https://github.com/Amulek1416/verilog-help-sheet/blob/main/module_instantiation.md)
 - [Arrays](https://github.com/Amulek1416/verilog-help-sheet/blob/main/array_of_busses.md)
+- [Loops](https://github.com/Amulek1416/verilog-help-sheet/blob/main/loops.md)
 
 ## Helps Comming Soon
 - Loops
