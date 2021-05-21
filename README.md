@@ -16,3 +16,4 @@ If there is incorrect information, bad grammer, something that needs a better ex
 ## Helps Comming Soon
 - Test Benches
 - Making Debugging Easier
+- Procedural Statements
