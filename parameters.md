@@ -9,10 +9,10 @@ module registers #(
     parameter WIDTH=8,
     parameter DEPTH=8
   ) (
-  input clk, write_en, read_en, reset,
-  input [(DEPTH-1):0] addr,
-  input [(WIDTH-1):0] data_in,
-  output [(WIDTH-1):0] data_out
+      input clk, write_en, read_en, reset,
+      input [(DEPTH-1):0] addr,
+      input [(WIDTH-1):0] data_in,
+      output [(WIDTH-1):0] data_out
 );
 
   reg [(WIDTH-1):0] memory [0:(DEPTH-1)];
