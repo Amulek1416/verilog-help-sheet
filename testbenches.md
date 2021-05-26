@@ -23,7 +23,7 @@ Here is a small example:
 >   reg a, b;
 >   wire c;
 >   
->   and_2bit(.a(a), .b(b), .c(c));
+>   and_2bit U0(.a(a), .b(b), .c(c));
 >   
 >endmodule
 >```
@@ -46,7 +46,7 @@ Usng the previous example, here is a modified version that shows it with simulat
 >   reg a, b;
 >   wire c;
 >   
->   and_2bit(.a(a), .b(b), .c(c));
+>   and_2bit U0(.a(a), .b(b), .c(c));
 >   
 >   initial
 >   begin
