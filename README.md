@@ -17,3 +17,5 @@ If there is incorrect information, bad grammer, something that needs a better ex
 - Test Benches
 - Making Debugging Easier
 - Procedural Statements
+- Parmaeters
+- Verilog vs System Verilog
