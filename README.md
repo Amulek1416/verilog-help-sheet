@@ -13,9 +13,9 @@ If there is incorrect information, bad grammer, something that needs a better ex
 - [Arrays](https://github.com/Amulek1416/verilog-help-sheet/blob/main/array_of_busses.md)
 - [Loops](https://github.com/Amulek1416/verilog-help-sheet/blob/main/loops.md)
 - [Parameters](https://github.com/Amulek1416/verilog-help-sheet/blob/main/parameters.md)
+- [Test Benches](https://github.com/Amulek1416/verilog-help-sheet/blob/main/testbenches.md)
 
 ## Helps Comming Soon
-- Test Benches
 - Making Debugging Easier
 - Procedural Statements
 - Verilog vs System Verilog
