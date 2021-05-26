@@ -43,4 +43,30 @@ module registers #(
 endmodule  
 ```
 
+The module can now be instantiated like normal, keeping the default parameter values, or be instantiated with different parameter values.
+```verilog
+module top(
+    input clk, reset_btn, write_btn, read_btn,
+    input [1:0] address,
+    input [15:0] save_value,
+    output [15:0] read_value
+);
+
+    registers U0 #(
+        .WIDTH(16),
+        .DEPTH(4)
+    )(
+        .clk(clk),
+        .read_en(read_btn),
+        .write_en(write_btn),
+        .data_in(save_value),
+        .addr(address),
+        .data_out(read_value),
+        .reset(reset_btn)
+    );
+
+endmodule
+```
+The above module will create 4, 16-bit registers by simply modifying the parameters values
+
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
