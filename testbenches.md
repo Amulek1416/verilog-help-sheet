@@ -157,25 +157,29 @@ module registers_testbench(); // Remember, no ports are used in a testbench
   // simulations (they aren't synthesizable)
   initial
   begin
+    $display("Starting Test Bench\n");
+  
     // Set initial values
     clk = 1'b0;
     write_en = 1'b0;
     read_en = 1'b0;
     address = 3'b000;
     
-    // Start with asserting a reset so that 
-    // everything within the module being
-    // simulated also gets initialized.
+    /**
+     * Start with asserting a reset so that 
+     * everything within the module being
+     * simulated also gets initialized.
+     */
     reset = 1'b1; 
     
-    $display("Starting Test Bench\n");
-    
-    // Since the clock is being pulsed by the always 
-    // statement at the bottom of the module, we can 
-    // use delays to make sure the values change after
-    // a clock pulse. In this case, it would be a delay
-    // of 10 time-units
-    
+    /**
+     * Since the clock is being pulsed by the always 
+     * statement at the bottom of the module, we can 
+     * use delays to make sure the values change after
+     * a clock pulse. In this case, it would be a delay
+     * of 10 time-units
+     */
+     
     // Here we give some time for the clock to pulse
     // before de-asserting reset.
     #10 reset = 1'b0;
@@ -184,8 +188,10 @@ module registers_testbench(); // Remember, no ports are used in a testbench
     
     // Now we can start setting values and testing.
     
-    // First, we will start by seeing if all addresses 
-    // were set to zero during the reset.
+    /**
+     * First, we will start by seeing if all addresses 
+     * were set to zero during the reset.
+     */
     $display("Verifying reset...\n");
     read_en = 1'b1; // State that we are going to read
     for(i = 0; i < 8; i = i + 1)
@@ -200,9 +206,10 @@ module registers_testbench(); // Remember, no ports are used in a testbench
     read_en = 1'b0; // Disable reading
     $display("Verification Finished!\n");
     
+    /**
+     * Now we will try to write 8'hBE to address 1.
+     */
     $display("Starting single write and read test...\n");
-    
-    // Now we will try to write 8'hBE to address 1.
     address = 3'b001;
     data_in = 8'hBE;
     write_en = 1'b1;
@@ -219,14 +226,18 @@ module registers_testbench(); // Remember, no ports are used in a testbench
     $display("Finished single read and write test!\n");
     
     // We can also simulate this easier by using loops.
-    $display("Starting sequential write and read test...\n");
     
-    // First, write to every register address.
+    /**
+     * First, write to every register address.
+     */
+    $display("Starting sequential write and read test...\n");
     for(i = 0; i < 8; i = i + 1)
     begin
-      // We wiil write a different value for each address,
-      // starting with 1, so that we can see if we are 
-      // writting to every location, one at a time.
+      /**
+       * We will write a different value for each address,
+       * starting with 1, so that we can see if we are 
+       * writting to every location, one at a time.
+       */
       data_in = i + 1; 
       address = i;
       write_en = 1'b1; // Enable writes
@@ -235,9 +246,11 @@ module registers_testbench(); // Remember, no ports are used in a testbench
       $display("\tWrote %h to address %d\n", data_in, address);
     end
     
-    // Next we will read from all of the addresses. 
-    // If the output isn't what we expect, assert 
-    // an error to the log.
+    /**
+     * Next we will read from all of the addresses. 
+     * If the output isn't what we expect, assert 
+     * an error to the console.
+     */
     for(i = 0; i < 8; i = i + 1)
     begin
       address = i;
@@ -254,9 +267,12 @@ module registers_testbench(); // Remember, no ports are used in a testbench
     
     $display("Finished sequential read and write test!\n");
     
+    
+    /**
+     * Now, lets double check that we aren't writting to the 
+     * registers when write_en is disabled.
+     */
     $display("Starting write without write enabled test...\n");
-    // Now, lets double check that we aren't writting to the 
-    // registers when write_en is disabled.
     write_en = 1'b0;
     read_en = 1'b0;
     data_in = 8'hFF;
@@ -273,9 +289,11 @@ module registers_testbench(); // Remember, no ports are used in a testbench
     end
     $display("Finished write without write enabled test!\n");
     
+    /**
+     * Finally, we can reset everything to make sure reset works 
+     * when the entire register is set to non-zeros.
+     */
     $display("Starting full reset test...\n");
-    // Finally, we can reset everything to make sure reset works 
-    // when the entire register is set to non-zeros.
     write_en = 1'b0;
     read_en = 1'b0;
     reset = 1'b1;
@@ -297,10 +315,12 @@ module registers_testbench(); // Remember, no ports are used in a testbench
     
   end
   
-  // This always statement will pulse a clock every 
-  // 5 time-units (the time units are determined by 
-  // the timescale above the module). This gives us
-  // a clock with a 10 time-unit period.
+  /**
+   * This always statement will pulse a clock every 
+   * 5 time-units (the time units are determined by 
+   * the timescale above the module). This gives us
+   * a clock with a 10 time-unit period.
+   */
   always #5 clk = ~clk;
 
 endmodule
