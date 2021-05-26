@@ -84,11 +84,16 @@ module registers #(
   reg [(WIDTH-1):0] memory [0:(DEPTH-1)];
   reg [(WIDTH-1):0] read_data;
   
+  integer i; // Used in the for loop when reset is asserted
+  
   always@(posedge clk)
   begin
     if(reset)
     begin
-      // Reset all of memory
+      for(i = 0; i < DEPTH; i = i + 1)
+      begin
+        memory[i] = {WIDTH{1'b0}};
+      end
     end
     else if(write_en)
     begin
