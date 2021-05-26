@@ -12,10 +12,10 @@ If there is incorrect information, bad grammer, something that needs a better ex
 - [Module Instantiation](https://github.com/Amulek1416/verilog-help-sheet/blob/main/module_instantiation.md)
 - [Arrays](https://github.com/Amulek1416/verilog-help-sheet/blob/main/array_of_busses.md)
 - [Loops](https://github.com/Amulek1416/verilog-help-sheet/blob/main/loops.md)
+- [Parameters](https://github.com/Amulek1416/verilog-help-sheet/blob/main/parameters.md)
 
 ## Helps Comming Soon
 - Test Benches
 - Making Debugging Easier
 - Procedural Statements
-- Parmaeters
 - Verilog vs System Verilog
