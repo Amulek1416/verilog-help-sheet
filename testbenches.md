@@ -3,7 +3,70 @@
 
 Test benches are used to simulate modules. They are especially useful in letting someone work on Verilog code without needing the hardware or having to generate a bitstream everytime there is a small change.
 
-Test benches are implemented using a module with no ports.
+## Implementation
+Test benches are implemented using a module with no ports. 
+
+Within the test bench module is where the module to simulate will be instantiated. 
+
+Because test bench modules don't have ports, you need to create your own. For each `input` and `inout` port that connects to the module to simulate, there needs to be a reg declared. Each `output` port that connects to the module to simulate should be declare as a wire.
+
+Here is a small example:
+>```verilog
+>module and_2bit(
+>   input a, b,
+>   output c
+>);
+>    assign c = a & b;
+>endmodule
+>
+>module myTestBench();
+>   reg a, b;
+>   wire c;
+>   
+>   and_2bit(.a(a), .b(b), .c(c));
+>   
+>endmodule
+>```
+
+## Simulating
+Along with creating to ports inside the test bench module, you need to create the logic for the test bench. Since the inputs to the module to simulate are type reg and need to be changed multiple times, they should be set in a procedural statement. Usually this is done in an `initial` statement and ends with a `$finish` statement. 
+
+We also want to have delays so we can see what is going on in a timing diagram. This is done by using a pound (`#`) sign followed by the number of time-units to delay. For example, if we wanted to have a 5 time-unit delay before setting `reg a` high, we would write `#5 a = 1'b1;` in the procedural statement.
+
+Usng the previous example, here is a modified version that shows it with simulation logic:
+>```verilog
+>module and_2bit(
+>   input a, b,
+>   output c
+>);
+>    assign c = a & b;
+>endmodule
+>
+>module myTestBench();
+>   reg a, b;
+>   wire c;
+>   
+>   and_2bit(.a(a), .b(b), .c(c));
+>   
+>   initial
+>   begin
+>       a = 1'b0;
+>       b = 1'b0;
+>       #5
+>       a = 1'b1;
+>       b = 1'b0;
+>       #5
+>       a = 1'b0;
+>       b = 1'b1;
+>       #5
+>       a = 1'b1;
+>       b = 1'b1;
+>       #5 $finish;
+>   end 
+>endmodule
+>```
+
+This example changes the values of `a` and `b`every 5 time units. Output `c` can be seen in the timing diagram after the simulation is run. It can also be seen by using `$display` to print out the values to the console.
 
 ## Example
 Supose you need to test the following module:
