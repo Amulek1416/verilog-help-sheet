@@ -19,3 +19,4 @@ If there is incorrect information, bad grammer, something that needs a better ex
 - Making Debugging Easier
 - Procedural Statements
 - Verilog vs System Verilog
+- State Machines
