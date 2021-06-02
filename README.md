@@ -1,6 +1,8 @@
 # Verilog Help Sheet
 This is a help sheet for programming in Verilog/System Verilog. This will help you to understand different aspects of Verilog. This assumes that the information is being read in the order of the **Contents** section. Click on the link of the topic to learn more about the topic.
 
+Most of the code that exists will be shown using priomarily Verilog. There are some differences between the two that will be explained in the future. However, most of the code should work in both Verilog and System Verilog with minimal differences.
+
 ## Contributing To This Repository
 If there is incorrect information, bad grammer, something that needs a better explaination, or a topic that should be covered, feel free to create an issue and/or submit a pull request. 
 
