@@ -51,6 +51,7 @@ module port_declaration_example_3(
 endmodule
 ```
 ## Declaring Ports Using Busses Example
+For more information on busses, see [Busses](https://github.com/Amulek1416/verilog-help-sheet/blob/main/busses.md)
 ```verilog
 /**
  * This example shows how to have a bus as an input/output/inout
