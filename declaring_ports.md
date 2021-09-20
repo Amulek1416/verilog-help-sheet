@@ -5,14 +5,17 @@ Ports are what go between the parenthesis of the module (similar to parameters i
 
 There are three ways to declare ports (shown in the following example modules).
 
+## Declaring Ports Examples
 ```verilog
 /** 
  * This example declares the port names, 
  * but states the port types inside the module
  */
 module port_declaration_example_1(
-    btnA, btnB,   
-    ledA, ledB    
+    btnA, 
+    btnB,   
+    ledA, 
+    ledB    
 );
     
     input btnA;
@@ -24,13 +27,11 @@ endmodule
 ```
 
 ```verilog
-/** 
- * This example declares the port names and 
- * the port types for each individual port.
- */
 module port_declaration_example_2(
-    input btnA, input btnB,   
-    output ledA, output ledB    
+    input btnA,     // You can declare each individual port as input/output on a separate line
+    input btnB,     // As you can see, this helps with commenting each individual port
+    output ledA, 
+    output ledB    
 );
 
 endmodule
@@ -49,4 +50,17 @@ module port_declaration_example_3(
 
 endmodule
 ```
+## Declaring Ports Using Busses Example
+```verilog
+/**
+ * This example shows how to have a bus as an input/output/inout
+ */
+module port_declaration_example_3(
+    input [0:1] buttons,   // All of these are inputs
+    output [0:1] leds   // All of these are outputs 
+);
+
+endmodule
+```
+
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
