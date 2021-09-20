@@ -56,8 +56,8 @@ endmodule
  * This example shows how to have a bus as an input/output/inout
  */
 module port_declaration_busses_example(
-    input [1:0] buttons,   // All of these are inputs
-    output [1:0] leds   // All of these are outputs 
+    input [1:0] buttons,
+    output [1:0] leds 
 );
 
 endmodule
