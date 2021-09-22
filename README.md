@@ -9,10 +9,10 @@ If there is incorrect information, bad grammer, something that needs a better ex
 ## Contents
 ### Beginner Topics
 - [Declaring Ports](https://github.com/Amulek1416/verilog-help-sheet/blob/main/declaring_ports.md)
+- [Module Instantiation](https://github.com/Amulek1416/verilog-help-sheet/blob/main/module_instantiation.md)
 - [Data Types](https://github.com/Amulek1416/verilog-help-sheet/blob/main/data_types.md)
 - [Busses](https://github.com/Amulek1416/verilog-help-sheet/blob/main/busses.md)
 - [Concatination and Replication](https://github.com/Amulek1416/verilog-help-sheet/blob/main/concatination_and_replication.md)
-- [Module Instantiation](https://github.com/Amulek1416/verilog-help-sheet/blob/main/module_instantiation.md)
 - [Arrays](https://github.com/Amulek1416/verilog-help-sheet/blob/main/array_of_busses.md)
 - [Procedural Statements](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md)
 ### Advanced Topics 
