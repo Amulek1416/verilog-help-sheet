@@ -120,7 +120,7 @@ There are multiple kinds of loops in Verilog and System Verilog, but some of the
 ## For Loop
 ### Syntax
 >```verilog
->for(<initial_condition>; <condition>, <step_assignment>)
+>for(<initial_condition>; <condition>; <step_assignment>)
 >begin
 >   // Statements
 >end
