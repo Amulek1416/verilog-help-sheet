@@ -7,7 +7,10 @@ This page contains two main sections, [Preventative](https://github.com/Amulek14
 ## Preventative
 This section contains great ways to help prevent errors and/or make it easier to read the code and find errors.
 
-As you can see, most of the help has to do with formatting and commenting. A mindset that can when coding in any language is *Can someone look at this code and understand what is going on quickly and efficiently?"*
+As you can see, most of the help has to do with formatting and commenting. When coding, ask yourself the following question: 
+> Can someone look at this code and understand what is going on quickly and efficiently?"
+
+This should be applied when coding in any language.
 
 ### Use Named Port Convention
 See [Module Instantiation](https://github.com/Amulek1416/verilog-help-sheet/blob/main/module_instantiation.md) under *Named Port Convention*
