@@ -4,12 +4,12 @@ There are multiple kinds of loops in Verilog and System Verilog, but some of the
 
 | **Loop**  | **Synthesizable** | **Description** |
 |:---------:|:-----------------:|-----------------|
-| forever   | NO                | Will run the code, literally, forever and can only be stopped by using the statement `$finish` |
-| repeat    | YES               | Repeats statement(s) for given number of times |
-| while     | NO                | Repeats statement(s) while a condition is true |
-| for       | YES               | Similar to the while and repeat loops and can be used to iterate until a condition is false |
-| do while  | NO                | Similar to a while loop, but will run the statement(s) at least once |
-| foreach   | YES               | Similar to a for loop, but will iterate for each item in an array and then exit |
+| [forever](https://github.com/Amulek1416/verilog-help-sheet/blob/main/loops.md#forever-loop)   | NO                | Will run the code, literally, forever and can only be stopped by using the statement `$finish` |
+| [repeat](https://github.com/Amulek1416/verilog-help-sheet/blob/main/loops.md#repeat-loop)    | YES               | Repeats statement(s) for given number of times |
+| [while](https://github.com/Amulek1416/verilog-help-sheet/blob/main/loops.md#while-loop)     | NO                | Repeats statement(s) while a condition is true |
+| [for](https://github.com/Amulek1416/verilog-help-sheet/blob/main/loops.md#for-loop)       | YES               | Similar to the while and repeat loops and can be used to iterate until a condition is false |
+| [do while](https://github.com/Amulek1416/verilog-help-sheet/blob/main/loops.md#do-while-loop)  | NO                | Similar to a while loop, but will run the statement(s) at least once |
+| [foreach](https://github.com/Amulek1416/verilog-help-sheet/blob/main/loops.md#for-each-loop)   | YES               | Similar to a for loop, but will iterate for each item in an array and then exit |
 
 ## Forever Loop
 ### Syntax 
