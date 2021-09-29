@@ -15,13 +15,13 @@ If there is incorrect information, bad grammer, something that needs a better ex
 - [Concatination and Replication](https://github.com/Amulek1416/verilog-help-sheet/blob/main/concatination_and_replication.md)
 - [Arrays](https://github.com/Amulek1416/verilog-help-sheet/blob/main/array_of_busses.md)
 - [Procedural Statements](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md)
+- [Debugging](https://github.com/Amulek1416/verilog-help-sheet/blob/main/debugging.md)
 ### Advanced Topics 
 - [Test Benches](https://github.com/Amulek1416/verilog-help-sheet/blob/main/testbenches.md)
 - [Loops](https://github.com/Amulek1416/verilog-help-sheet/blob/main/loops.md)
 - [Parameters](https://github.com/Amulek1416/verilog-help-sheet/blob/main/parameters.md)
 
 ## Helps Comming Soon
-- [Debugging](https://github.com/Amulek1416/verilog-help-sheet/blob/main/debugging.md)
 - [Verilog vs System Verilog](https://github.com/Amulek1416/verilog-help-sheet/blob/main/verilog_vs_system_verilog.md)
 - [State Machines](https://github.com/Amulek1416/verilog-help-sheet/blob/main/state_machines.md)
 - [Operators](https://github.com/Amulek1416/verilog-help-sheet/blob/main/operators.md)
