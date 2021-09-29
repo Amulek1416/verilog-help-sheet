@@ -5,6 +5,8 @@ This page is really just a bunch of seggestions that you can use when debugging 
 ## Prevention
 This section contains great ways to help prevent errors and/or make it easier to read the code and find errors.
 
+As you can see, most of the help has to do with formatting and commenting. A mindset that can when coding in any language is *Can someone look at this code and understand what is going on quickly and efficiently?"*
+
 ### Use Named Port Convention
 See [Module Instantiation](https://github.com/Amulek1416/verilog-help-sheet/blob/main/module_instantiation.md) under *Named Port Convention*
 Not having to worry about the order and really help. It will also help show exactly what is connected to what.
@@ -15,7 +17,7 @@ Keeping your code nice and neat helps to make it really easy to read the code.
 The following is an example of neat code. The module doesn't really do anything, but shows a good example for formatting.
 ```verilog
 module a_good_looking_module(
-   input inputA
+   input inputA,
    input [3:0] inputB,
    input [15:0] inputC,
    output reg outputA,
@@ -34,7 +36,12 @@ module a_good_looking_module(
       end
    end
    
-   another_module
+   another_module_instantiation U0 #(
+       .BIT_SIZE(1)
+   )(
+       .inputA(input_A),
+       .outputB(output_B)
+   );
    
    always@(posedge inputA)
    begin
@@ -51,6 +58,37 @@ module a_good_looking_module(
 endmodule
 ```
 
+The following is the same code, but without having neat formatting:
+```verilog
+module a_good_looking_module(input inputA, input [3:0] inputB, input [15:0] inputC, output reg outputA, output [3:0] outputB, output [15:0] outputC);
+reg [15:0] memory [0:7];
+integer i;
+  
+initial
+begin
+for(i = 0; i < 8; i = i + 1)
+begin
+memory[i] = 16'h0000; 
+end
+end
+   
+another_module_instantiation U0 #(.BIT_SIZE(1))(.inputA(input_A),.outputB(output_B));
+
+always@(posedge inputA)
+begin
+if(inputB == 4'b0110)
+begin
+outputA <= 1'b1;
+end
+else
+begin
+outputA <= 1'b0;
+end
+end
+
+endmodule
+```
+As you can see, keeping your code nice and neat will help you to understand what the code is doing when you come back to it later. It will also help others understand what your code is doing much quicker too.
 
 
 
