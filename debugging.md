@@ -94,4 +94,5 @@ As you can see, keeping your code nice and neat will help you to understand what
 
 ## Catching Bugs
 More information will be coming soon. See the [Preventative](https://github.com/Amulek1416/verilog-help-sheet/blob/main/debugging.md#preventative) section and follow its guidlines. Following these can also help find simple bugs.
+
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
