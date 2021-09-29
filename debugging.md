@@ -65,7 +65,7 @@ endmodule
 
 The following is the same code, but without having neat formatting:
 ```verilog
-module a_good_looking_module(input inputA, input [3:0] inputB, input [15:0] inputC, output reg outputA, output [3:0] outputB, output [15:0] outputC);
+module a_NOT_good_looking_module(input inputA, input [3:0] inputB, input [15:0] inputC, output reg outputA, output [3:0] outputB, output [15:0] outputC);
 reg [15:0] memory [0:7];
 integer i;
   
