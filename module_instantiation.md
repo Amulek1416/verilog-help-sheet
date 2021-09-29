@@ -6,7 +6,7 @@ Modules can be instantiated in other modules. The following is the basic syntax:
 ><module_name> <label>(<port_assignments>);
 >```
 
-Within this, there are two different styles that can be used, `ordered port convention` and `named port convention`.
+Within this, there are two different styles that can be used, [Ordered Port Convention](https://github.com/Amulek1416/verilog-help-sheet/blob/main/module_instantiation.md#ordered-port-convention) and [Named Port Convention](https://github.com/Amulek1416/verilog-help-sheet/blob/main/module_instantiation.md#named-port-convention).
 
 ## Ordered Port Convention
 
