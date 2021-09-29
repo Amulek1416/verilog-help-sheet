@@ -2,7 +2,7 @@
 # Debugging
 This page is really just a bunch of seggestions that you can use when debugging HDL code in general. There are many helps in IDEs (like Vivado) that can also help debug code.
 
-This page contains two main sections, [Preventative]() and [Catching Bugs](). The preventative section contains ideas of how to reduce posibilities of bugs while the catching bugs section goes over general steps that can be taken to find bugs.
+This page contains two main sections, [Preventative](https://github.com/Amulek1416/verilog-help-sheet/blob/main/debugging.md#preventative) and [Catching Bugs](https://github.com/Amulek1416/verilog-help-sheet/blob/main/debugging.md#catching-bugs). The preventative section contains ideas of how to reduce posibilities of bugs while the catching bugs section goes over general steps that can be taken to find bugs. 
 
 ## Preventative
 This section contains great ways to help prevent errors and/or make it easier to read the code and find errors.
@@ -93,5 +93,5 @@ endmodule
 As you can see, keeping your code nice and neat will help you to understand what the code is doing when you come back to it later. It will also help others understand what your code is doing much quicker too.
 
 ## Catching Bugs
-
+More information will be coming soon. See the [Preventative](https://github.com/Amulek1416/verilog-help-sheet/blob/main/debugging.md#preventative) section and follow its guidlines. Following these can also help find simple bugs.
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
