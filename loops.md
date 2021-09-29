@@ -164,6 +164,7 @@ There are multiple kinds of loops in Verilog and System Verilog, but some of the
 >
 >endmodule
 >```
+**NOTE:** When doing a for loop outside of a procedural statement (ex: instantiate multiple modules), you need to create a variable of type `genvar` instead of type `integer1 like in the exmaple above.
 
 ## Do While Loop
 ### Syntax
