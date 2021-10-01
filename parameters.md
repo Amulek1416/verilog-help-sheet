@@ -2,7 +2,7 @@
 # Parameters
 Parameters are a way to make your code more dynamic in its application. While they can't be modified at runtime, they can be set when instantiating modules.
 
-For example, if I wanted to make a register module that could be set to any width and depth, I could use parameters that will set the width and depth of the registers.
+For example, if I wanted to make a register module that could be set to any width and depth, you could use parameters that will set the width and depth of the registers.
 
 ```verilog
 module registers #(
