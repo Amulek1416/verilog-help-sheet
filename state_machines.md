@@ -83,8 +83,6 @@ endmodule
 
 ![MealyStateMachineGraph](stateMachineGraph-Mealy.PNG)
 
-[[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
-
 ```verilog
 module find_110_mealy(
   input d,          // Serial Data
@@ -148,3 +146,5 @@ module find_110_mealy(
 
 endmodule
 ```
+
+[[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
