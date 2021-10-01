@@ -1,7 +1,7 @@
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
 # State Machines
 
-State machines are a core part of digital design. This section contains examples for a Moore and Mealy state machine. Both of these examples consist of a state machine that is looking for the sequence of `110` coming from incomming serial data. 
+State machines are a core part of digital design. This section contains examples for a [Moore](https://github.com/Amulek1416/verilog-help-sheet/blob/main/state_machines.md#moore) and [Mealy](https://github.com/Amulek1416/verilog-help-sheet/blob/main/state_machines.md#mealy) state machine. Both of these examples consist of a state machine that is looking for the sequence of `110` coming from incomming serial data. 
 
 ## Moore
 
