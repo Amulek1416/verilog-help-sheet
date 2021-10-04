@@ -24,4 +24,4 @@ If there is incorrect information, bad grammer, something that needs a better ex
 - [State Machines](https://github.com/Amulek1416/verilog-help-sheet/blob/main/state_machines.md)
 
 ### Helps Comming Soon
-- [Verilog vs System Verilog](https://github.com/Amulek1416/verilog-help-sheet/blob/main/verilog_vs_system_verilog.md)
+- [404]()
