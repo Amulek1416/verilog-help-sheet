@@ -2,8 +2,8 @@
 # Data Types
 
 ## Verilog
-
-There are two data types in Verilog: `wire` and `reg`.
+### reg & wire
+There are two main data types in Verilog: `wire` and `reg`.
 
 `wire`:  Continuously changes based on assignment and is set using an assign statement. All ports are implied to be a wire (unless specifically specified to be a reg).
 
@@ -54,6 +54,13 @@ module reg_example(
     
 endmodule
 ```
+    
+### Other Data Types
+| **Data Type** | **Description** |
+|:---------:|-----------------|
+|integer| *Coming Soon* |
+|genvar| *Coming Soon* |
+|localparam| *Coming Soon* |
     
 ## System Verilog
 
