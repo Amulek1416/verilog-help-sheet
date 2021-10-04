@@ -59,7 +59,7 @@ endmodule
 
 Any data types supported in Verilog are also supported in System Verilog. System Verilog, however, supports another data type called `logic`. This data type makes it where you don't need to worry about what needs to be type `reg` or type `wire`.
     
-```verilog
+```systemverilog
 module logic_as_wire_example(
     input btnA, btnB,
     output ledA
@@ -72,7 +72,7 @@ module logic_as_wire_example(
     
 endmodule
 ```
-```verilog
+```systemverilog
 module logic_as_reg_example(
     input btnA, btnB, clk, // inputs
     output ledA
@@ -83,7 +83,7 @@ module logic_as_reg_example(
     // This will check if the ledA should be 
     // turned on at every positive edge of
     // the clock
-    always@(posedge clk)
+    always_ff@(posedge clk)
         if(btnA && btnB)
             turnLedOn = 1'b1;
         else
