@@ -1,5 +1,5 @@
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
-# Procedural Statements (Verilog)
+# Verilog
 Procedural statements are used for working with `reg` type variables. It can also be used for flip-flop type logic and behavioral type logic. 
 
 There are two procedural statements in Verilog, `always` and `initial`.
@@ -146,7 +146,18 @@ module MEM_4x8(
 endmodule
 ```
 
-# Procedural Statements (System Verilog)
-*Coming Soon*
+# System Verilog
+System Verilog is a little more complex when it comes to always statements. Instead of using a single generic always statement, it uses distinct always statements for flip-flops, combinational logic, and latches. **NOTE:** System Verilog uses initial statements in the exact same way as Verilog
+
+## Flip-Flops
+### Syntax
+>```systemverilog
+>always_ff@(<condition>)
+>begin
+>   // Code
+>end
+>```
+### Example
+
 
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
