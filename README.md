@@ -15,6 +15,7 @@ If there is incorrect information, bad grammer, something that needs a better ex
 - [Concatination and Replication](https://github.com/Amulek1416/verilog-help-sheet/blob/main/concatination_and_replication.md)
 - [Arrays](https://github.com/Amulek1416/verilog-help-sheet/blob/main/array_of_busses.md)
 - [Procedural Statements](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md)
+- [Operators](https://github.com/Amulek1416/verilog-help-sheet/blob/main/operators.md)
 - [Debugging](https://github.com/Amulek1416/verilog-help-sheet/blob/main/debugging.md)
 ### Advanced Topics 
 - [Test Benches](https://github.com/Amulek1416/verilog-help-sheet/blob/main/testbenches.md)
@@ -24,4 +25,3 @@ If there is incorrect information, bad grammer, something that needs a better ex
 
 ### Helps Comming Soon
 - [Verilog vs System Verilog](https://github.com/Amulek1416/verilog-help-sheet/blob/main/verilog_vs_system_verilog.md)
-- [Operators](https://github.com/Amulek1416/verilog-help-sheet/blob/main/operators.md)
