@@ -24,4 +24,4 @@ If there is incorrect information, bad grammer, something that needs a better ex
 - [State Machines](https://github.com/Amulek1416/verilog-help-sheet/blob/main/state_machines.md)
 
 ### Helps Comming Soon
-- [404]()
+- [Don't Click This](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
