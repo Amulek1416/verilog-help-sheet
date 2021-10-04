@@ -1,6 +1,8 @@
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
 # Data Types
 
+## Verilog
+
 There are two data types in Verilog: `wire` and `reg`.
 
 `wire`:  Continuously changes based on assignment and is set using an assign statement. All ports are implied to be a wire (unless specifically specified to be a reg).
@@ -52,4 +54,44 @@ module reg_example(
     
 endmodule
 ```
+    
+## System Verilog
+
+Any data types supported in Verilog are also supported in System Verilog. System Verilog, however, supports another data type called `logic`. This data type makes it where you don't need to worry about what needs to be type `reg` or type `wire`.
+    
+```verilog
+module logic_as_wire_example(
+    input btnA, btnB,
+    output ledA
+);
+    
+    logic isBtnsPressed;
+    
+    assign isBtnsPressed = btnA & btnB;
+    assign ledA = isBtnsPressed;
+    
+endmodule
+```
+```verilog
+module logic_as_reg_example(
+    input btnA, btnB, clk, // inputs
+    output ledA
+);
+    
+    logic turnLedOn;
+    
+    // This will check if the ledA should be 
+    // turned on at every positive edge of
+    // the clock
+    always@(posedge clk)
+        if(btnA && btnB)
+            turnLedOn = 1'b1;
+        else
+            turnLedOn = 1'b0;
+    
+    assign ledA = turnLedOn;
+    
+endmodule
+```
+    
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
