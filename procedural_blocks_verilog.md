@@ -150,7 +150,7 @@ endmodule
 ```
 
 # System Verilog
-System Verilog is a little more complex when it comes to always statements. Instead of using a single generic always statement, it uses distinct always statements for [flip-flops](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md#flip-flops), [combinational logic](), and [latches](). 
+System Verilog is a little more complex when it comes to always statements. Instead of using a single generic always statement, it uses distinct always statements for [flip-flops](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md#flip-flops), [combinational logic](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md#combinational-logic), and [latches](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md#latches). 
 
 **NOTE:** System Verilog uses [initial statements](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md#initial) in the exact same way as Verilog
 
