@@ -56,6 +56,9 @@ endmodule
 ```
     
 ### Other Data Types
+    
+More information about how to use anything in the following table can be found with a quick google search
+    
 | **Data Type** | **Description** |
 |:---------:|-----------------|
 |integer| *Coming Soon* |
