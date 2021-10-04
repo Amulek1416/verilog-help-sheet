@@ -155,19 +155,75 @@ System Verilog is a little more complex when it comes to always statements. Inst
 **NOTE:** System Verilog uses [initial statements](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md#initial) in the exact same way as Verilog
 
 ## Flip-Flops
+
 ### Syntax
 >```systemverilog
 >always_ff@(<condition>)
 >begin
->   // Code
+>   <code_to_execute>
 >end
 >```
+  
 ### Example
+```systemverilog
+/**
+ * This module counts up on every positive edge of the clock. 
+ * Setting the reset low will set the counter to zero.
+ */
+module counter(
+  input clk, reset,
+  output logic [7:0] count
+);
+  
+  always_ff@(posedge clk, negedge reset)
+  begin
+    if(~reset) count <= 8'h00;
+    else count <= count + 1'b1;
+  end
 
+endmodule
+```
+  
 ## Combinational Logic
-*Coming Soon*
+  
+### Syntax
+>```systemverilog
+>always_comb
+>begin
+>   <code_to_execute>
+>end
+>```
+  
+### Example
+```systemverilog
+/**
+ * Module creates a 2:1 MUX with 8-bit busses using an always statement.
+ */
+module MUX_2_1(
+  input s,
+  input [7:0] x, y,
+  output logic [7:0] f
+);
+
+  always_comb
+  begin
+    case(s)
+      1'b0 : f = x;
+      1'b1 : f = y;
+      default : f = x;
+    endcase
+  end
+
+endmodule
+```
   
 ## Latches
-*Coming Soon*
+### Syntax
+>```systemverilog
+>always_latch
+>begin
+>   <code_to_execute>
+>end
+>```
 
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
