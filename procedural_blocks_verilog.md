@@ -1,8 +1,11 @@
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
+# Procedural Statements
+These are different between [Verilog](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md#verilog) and [System Verilog](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md#system-verilog)
+
 # Verilog
 Procedural statements are used for working with `reg` type variables. It can also be used for flip-flop type logic and behavioral type logic. 
 
-There are two procedural statements in Verilog, `always` and `initial`.
+There are two procedural statements in Verilog, [always](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md#always) and [initial](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md#initial).
 
 ## always
 An always statement will execute when anything in the sensitivity list changes. There are three ways to write an always statement.
@@ -147,7 +150,9 @@ endmodule
 ```
 
 # System Verilog
-System Verilog is a little more complex when it comes to always statements. Instead of using a single generic always statement, it uses distinct always statements for flip-flops, combinational logic, and latches. **NOTE:** System Verilog uses initial statements in the exact same way as Verilog
+System Verilog is a little more complex when it comes to always statements. Instead of using a single generic always statement, it uses distinct always statements for [flip-flops](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md#flip-flops), [combinational logic](), and [latches](). 
+
+**NOTE:** System Verilog uses [initial statements](https://github.com/Amulek1416/verilog-help-sheet/blob/main/procedural_blocks_verilog.md#initial) in the exact same way as Verilog
 
 ## Flip-Flops
 ### Syntax
@@ -159,5 +164,10 @@ System Verilog is a little more complex when it comes to always statements. Inst
 >```
 ### Example
 
+## Combinational Logic
+*Coming Soon*
+  
+## Latches
+*Coming Soon*
 
 [[back to Contents]](https://github.com/Amulek1416/verilog-help-sheet/blob/main/README.md)
