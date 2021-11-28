@@ -23,5 +23,5 @@ If there is incorrect information, bad grammer, something that needs a better ex
 - [Parameters](https://github.com/Amulek1416/verilog-help-sheet/blob/main/parameters.md)
 - [State Machines](https://github.com/Amulek1416/verilog-help-sheet/blob/main/state_machines.md)
 
-### Helps Comming Soon
+### Helps Coming Soon
 - [Don't Click This](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
