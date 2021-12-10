@@ -142,7 +142,7 @@ module find_110_mealy(
   // equal to the desired state AND the current input is equal to a desired value.
   // In this case the desired current state is `GOT_110` and the desired input is `1'b0`
   // This part is also considered the `Output Forming Logic` (`OFL`).
-  assign found_flg = (current_state == GOT_110) && (d == 1'b0);
+  assign found_flg = (current_state == GOT_11) && (d == 1'b0);
 
 endmodule
 ```
