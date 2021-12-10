@@ -140,7 +140,7 @@ module find_110_mealy(
   
   // Since this is a Mealy, the output is asserted when `current_state` is
   // equal to the desired state AND the current input is equal to a desired value.
-  // In this case the desired current state is `GOT_110` and the desired input is `1'b0`
+  // In this case the desired current state is `GOT_11` AND the desired input is `1'b0`
   // This part is also considered the `Output Forming Logic` (`OFL`).
   assign found_flg = (current_state == GOT_11) && (d == 1'b0);
 
